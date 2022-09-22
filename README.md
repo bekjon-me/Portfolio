@@ -20,17 +20,17 @@ Coming soon
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
 ### Setup
+
+- clone this repository to local computer
 
 ### Install
 
+- install packages using npm install
+
 ### Usage
 
-### Run tests
-
-### Deployment
+- open the index.html via live server
 
 ## Authors
 
