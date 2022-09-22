@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-nav {
+header > nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -16,7 +16,8 @@ nav {
   padding: 12px 24px;
 }
 
-nav > h2 {
+header > nav > a {
+  text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -25,13 +26,13 @@ nav > h2 {
   color: #fff;
 }
 
-nav > .hamburger {
+header > nav > .hamburger {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
-nav > .hamburger > .line {
+header > nav > .hamburger > .line {
   width: 16px;
   height: 2px;
   background: #fff;
@@ -50,7 +51,7 @@ header {
   row-gap: 12px;
 }
 
-header > h1 {
+header > section#headline > h1 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -60,7 +61,7 @@ header > h1 {
   color: #ff6b00;
 }
 
-header > p.title {
+header > section#headline > p.title {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -69,7 +70,7 @@ header > p.title {
   color: #fff5e1;
 }
 
-header > p.title_description {
+header > section#headline > p.title_description {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -78,7 +79,7 @@ header > p.title_description {
   color: #fff;
 }
 
-header > .social {
+header > section#headline > .social {
   padding: 0 8px;
   display: flex;
   column-gap: 16px;
