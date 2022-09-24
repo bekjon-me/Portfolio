@@ -33,26 +33,20 @@ header > nav > .hamburger {
   gap: 4px;
 }
 
-header > nav > .hamburger > .line {
-  width: 16px;
-  height: 2px;
-  background: #fff;
-}
-
-header > section#headline {
+section#headline {
   width: 100%;
   background: #1c1a19;
   background-image: url('assets/illustration_header_mobile.svg');
   background-repeat: no-repeat;
   background-position-x: right;
-  background-position-y: 220px;
+  background-position-y: 230px;
   padding: 120px 24px;
   display: flex;
   flex-direction: column;
   row-gap: 12px;
 }
 
-header > section#headline > h1 {
+section#headline > h1 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -61,7 +55,7 @@ header > section#headline > h1 {
   color: #ff6b00;
 }
 
-header > section#headline > p.title {
+section#headline > p.title {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -70,7 +64,7 @@ header > section#headline > p.title {
   color: #fff5e1;
 }
 
-header > section#headline > p.title_description {
+section#headline > p.title_description {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -79,7 +73,7 @@ header > section#headline > p.title_description {
   color: #fff;
 }
 
-header > section#headline > .social {
+section#headline > .social {
   padding: 0 8px;
   display: flex;
   column-gap: 16px;
