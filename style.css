@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); /* 700 */
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap'); /* 400 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); /* 400 */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); /* 400 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap'); /* 500 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap'); /* 700 */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
 }
+
+/* HEADER */
 
 header > nav {
   width: 100%;
@@ -32,6 +37,10 @@ header > nav > .hamburger {
   flex-direction: column;
   gap: 4px;
 }
+
+/* HEADER */
+
+/* HEADLINE SECTION */
 
 section#headline {
   width: 100%;
@@ -77,4 +86,227 @@ section#headline > .social {
   padding: 0 8px;
   display: flex;
   column-gap: 16px;
+}
+
+/* HEADLINE SECTION */
+
+/* PORTFOLIO SECTION */
+
+#portfolio {
+  padding: 120px 24px;
+}
+
+#portfolio > h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #1c1a19;
+  margin-bottom: 24px;
+}
+
+#portfolio > .cards {
+  display: grid;
+  grid-template-columns: auto;
+  margin-top: 80px;
+  row-gap: 24px;
+}
+
+#portfolio > .cards > .unusualCard {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+#portfolio > .cards > .unusualCard > img {
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+#portfolio > .cards > .unusualCard > h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+  text-align: center;
+}
+
+#portfolio > .cards > .unusualCard > p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+#portfolio > .cards .skills {
+  display: flex;
+  /* justify-content: start; */
+  column-gap: 8px;
+  margin-top: 12px;
+}
+
+#portfolio > .cards .skills > li {
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+}
+
+#portfolio > .cards > .unusualCard > button {
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background: #ff6b00;
+  border: none;
+  width: fit-content;
+}
+
+#portfolio > .cards > .card > .main {
+  background-image: url('assets/cardBg.svg');
+  width: 100%;
+  padding: 0 16px 22px 16px;
+}
+
+#portfolio > .cards > .card > .main > h2 {
+  margin-top: 84px;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
+}
+
+#portfolio > .cards > .card > .main > p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+#portfolio > .cards > .card > .main > .skills > li {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+#portfolio > .cards > .card > button {
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background: #ff6b00;
+  border: none;
+  width: 100%;
+}
+
+/* PORTFOLIO SECTION */
+
+/* ABOUT SECTION */
+
+#about {
+  padding: 120px 24px;
+  background: #1c1a19;
+  background-image: url('assets/aboutBg.svg');
+  background-position-x: right;
+  background-position-y: 385px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+#about > h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+#about > p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+}
+
+#about > button {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding: 12px;
+  width: fit-content;
+  background: #ff6b00;
+  border: none;
+  margin-bottom: 187px;
+}
+
+#about > ul.skillTypes {
+  margin-top: 70px;
+  list-style: none;
+}
+
+#about > ul.skillTypes > li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about > ul.skillTypes > li > div {
+  display: flex;
+  column-gap: 12px;
+  margin: 44px 0;
+}
+
+#about > ul.skillTypes > li > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 32px;
+}
+
+#about > ul.skillTypes > li > ul > li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  color: #ffffff;
 }
