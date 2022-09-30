@@ -244,6 +244,20 @@ section#headline > .social {
   width: fit-content;
 }
 
+#portfolio > .cards > .card > button {
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background: #ff6b00;
+  border: 1px solid transparent;
+  width: 100%;
+}
+
 #portfolio > .cards > .unusualCard > button:hover {
   cursor: pointer;
   color: #f55800;
@@ -283,20 +297,6 @@ section#headline > .social {
 
 #portfolio > .cards > .card > .main > .skills > li {
   background: rgba(255, 255, 255, 0.24);
-}
-
-#portfolio > .cards > .card > button {
-  padding: 12px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #fff;
-  background: #ff6b00;
-  border: 1px solid transparent;
-  width: 100%;
 }
 
 #portfolio > .cards > .card > button:hover {
