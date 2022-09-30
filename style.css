@@ -124,6 +124,16 @@ section#headline > .social {
   width: 100%;
 }
 
+#about > h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
 #portfolio > .cards > .unusualCard > h2 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -132,6 +142,15 @@ section#headline > .social {
   line-height: 44px;
   color: #091e42;
   text-align: center;
+}
+
+#about > p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
 }
 
 #portfolio > .cards > .unusualCard > p {
@@ -145,9 +164,29 @@ section#headline > .social {
 
 #portfolio > .cards .skills {
   display: flex;
-  /* justify-content: start; */
   column-gap: 8px;
   margin-top: 12px;
+}
+
+#about > ul.skillTypes > li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about > ul.skillTypes > li > ul > li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  color: #fff;
 }
 
 #portfolio > .cards .skills > li {
@@ -161,6 +200,24 @@ section#headline > .social {
   color: #091e42;
 }
 
+#about > button {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  padding: 12px;
+  width: fit-content;
+  background: #ff6b00;
+  border: none;
+  margin-bottom: 187px;
+}
+
 #portfolio > .cards > .unusualCard > button {
   padding: 12px;
   font-family: 'Inter', sans-serif;
@@ -169,7 +226,7 @@ section#headline > .social {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: #fff;
   background: #ff6b00;
   border: none;
   width: fit-content;
@@ -188,7 +245,7 @@ section#headline > .social {
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  color: #ffffff;
+  color: #fff;
 }
 
 #portfolio > .cards > .card > .main > p {
@@ -197,7 +254,7 @@ section#headline > .social {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #ffffff;
+  color: #fff;
 }
 
 #portfolio > .cards > .card > .main > .skills > li {
@@ -212,7 +269,7 @@ section#headline > .social {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: #fff;
   background: #ff6b00;
   border: none;
   width: 100%;
@@ -234,58 +291,9 @@ section#headline > .social {
   row-gap: 24px;
 }
 
-#about > h2 {
-  font-family: 'Crete Round', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 72px;
-  line-height: 88px;
-  letter-spacing: 0.37px;
-  color: #ff6b00;
-}
-
-#about > p {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #f4f5f7;
-}
-
-#about > button {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  padding: 12px;
-  width: fit-content;
-  background: #ff6b00;
-  border: none;
-  margin-bottom: 187px;
-}
-
 #about > ul.skillTypes {
   margin-top: 70px;
   list-style: none;
-}
-
-#about > ul.skillTypes > li {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 #about > ul.skillTypes > li > div {
@@ -300,13 +308,4 @@ section#headline > .social {
   flex-direction: column;
   align-items: center;
   row-gap: 32px;
-}
-
-#about > ul.skillTypes > li > ul > li {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 43px;
-  color: #ffffff;
 }
