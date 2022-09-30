@@ -214,8 +214,20 @@ section#headline > .social {
   padding: 12px;
   width: fit-content;
   background: #ff6b00;
-  border: none;
+  border: 1px solid transparent;
   margin-bottom: 187px;
+}
+
+#about > button:hover {
+  cursor: pointer;
+  color: #f55800;
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+}
+
+#about > button:active {
+  color: #f4f1f0;
+  background: #e05304;
 }
 
 #portfolio > .cards > .unusualCard > button {
@@ -228,8 +240,20 @@ section#headline > .social {
   letter-spacing: 0.03em;
   color: #fff;
   background: #ff6b00;
-  border: none;
+  border: 1px solid transparent;
   width: fit-content;
+}
+
+#portfolio > .cards > .unusualCard > button:hover {
+  cursor: pointer;
+  color: #f55800;
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+}
+
+#portfolio > .cards > .unusualCard > button:active {
+  color: #f4f1f0;
+  background: #e05304;
 }
 
 #portfolio > .cards > .card > .main {
@@ -271,8 +295,20 @@ section#headline > .social {
   letter-spacing: 0.03em;
   color: #fff;
   background: #ff6b00;
-  border: none;
+  border: 1px solid transparent;
   width: 100%;
+}
+
+#portfolio > .cards > .card > button:hover {
+  cursor: pointer;
+  color: #f55800;
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+}
+
+#portfolio > .cards > .card > button:active {
+  color: #f4f1f0;
+  background: #e05304;
 }
 
 /* PORTFOLIO SECTION */
