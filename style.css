@@ -163,9 +163,7 @@ section#headline > .social {
 }
 
 #portfolio > .cards .skills {
-  display: flex;
-  column-gap: 8px;
-  margin-top: 12px;
+  float: left;
 }
 
 #about > ul.skillTypes > li {
@@ -198,6 +196,8 @@ section#headline > .social {
   font-size: 15px;
   line-height: 20px;
   color: #091e42;
+  float: left;
+  margin-right: 8px;
 }
 
 #about > button {
