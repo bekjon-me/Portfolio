@@ -82,7 +82,7 @@ section#headline > p.title_description {
   color: #fff;
 }
 
-section#headline > .social {
+.social {
   padding: 0 8px;
   display: flex;
   column-gap: 16px;
@@ -132,6 +132,16 @@ section#headline > .social {
   line-height: 88px;
   letter-spacing: 0.37px;
   color: #ff6b00;
+}
+
+#contact > h2 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
 }
 
 #portfolio > .cards > .unusualCard > h2 {
@@ -356,16 +366,6 @@ section#headline > .social {
   padding: 120px 24px;
 }
 
-#contact > h2 {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  text-align: center;
-  color: #172b4d;
-}
-
 #contact > form {
   display: flex;
   flex-direction: column;
@@ -378,7 +378,7 @@ section#headline > .social {
   margin: 24px 0;
   padding: 24px 0 0 24px;
   outline: none;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -429,11 +429,6 @@ footer {
   display: flex;
   justify-content: center;
   padding: 24px;
-}
-
-footer > .social {
-  display: flex;
-  column-gap: 16px;
 }
 
 footer > .social > li > a {
