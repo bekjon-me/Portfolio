@@ -345,3 +345,99 @@ section#headline > .social {
   align-items: center;
   row-gap: 32px;
 }
+
+/* ABOUT SECTION */
+
+/* CONTACT SECTION */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 24px;
+}
+
+#contact > h2 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+}
+
+#contact > form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+#contact > form > input,
+#contact > form > textarea {
+  border: none;
+  margin: 24px 0;
+  padding: 24px 0 0 24px;
+  outline: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #979493;
+}
+
+#contact > form > textarea {
+  background: #fbf8f7;
+}
+
+#contact > form > input[type='submit'] {
+  margin: 0 auto;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background-color: #ff6b00;
+  width: fit-content;
+  border: 1px solid transparent;
+}
+
+#contact > form > input[type='submit']:hover {
+  cursor: pointer;
+  color: #f55800;
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+}
+
+#contact > form > input[type='submit']:active {
+  color: #f4f1f0;
+  background: #e05304;
+}
+
+/* CONTACT SECTION */
+
+/* FOOTER */
+
+footer {
+  border-top: 1px solid #dfe1e6;
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+}
+
+footer > .social {
+  display: flex;
+  column-gap: 16px;
+}
+
+footer > .social > li > a {
+  filter: invert(37%) sepia(8%) saturate(1480%) hue-rotate(180deg)
+    brightness(50%) contrast(90%);
+  font-weight: bold;
+}
