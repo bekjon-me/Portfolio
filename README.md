@@ -30,7 +30,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Usage
 
-- open the index.html via live server
+- open the index.html via live server or just open the index.html
 
 ## Authors
 
