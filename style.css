@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); /* 700 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /* 400 */
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap'); /* 400 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); /* 400 */
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); /* 400 */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap'); /* 500 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap'); /* 600 */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap'); /* 700 */
 * {
   margin: 0;
@@ -12,6 +14,10 @@
 }
 
 /* HEADER */
+
+header > nav > .desktop_links {
+  display: none;
+}
 
 header > nav {
   width: 100%;
@@ -55,7 +61,7 @@ section#headline {
   row-gap: 12px;
 }
 
-section#headline > h1 {
+section#headline > .headline_right > h1 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -64,7 +70,7 @@ section#headline > h1 {
   color: #ff6b00;
 }
 
-section#headline > p.title {
+section#headline > .headline_right > p.title {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -73,7 +79,7 @@ section#headline > p.title {
   color: #fff5e1;
 }
 
-section#headline > p.title_description {
+section#headline > .headline_right > p.title_description {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -132,6 +138,7 @@ section#headline > p.title_description {
   line-height: 88px;
   letter-spacing: 0.37px;
   color: #ff6b00;
+  overflow: hidden;
 }
 
 #contact > h2 {
@@ -388,6 +395,12 @@ section#headline > p.title_description {
 
 #contact > form > textarea {
   background: #fbf8f7;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3c3a39;
 }
 
 #contact > form > input[type='submit'] {
@@ -435,4 +448,214 @@ footer > .social > li > a {
   filter: invert(37%) sepia(8%) saturate(1480%) hue-rotate(180deg)
     brightness(50%) contrast(90%);
   font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  header > nav {
+    padding: 26px 154px;
+  }
+
+  header > nav > .desktop_links {
+    display: flex;
+    column-gap: 32px;
+  }
+
+  header > nav > .desktop_links > li > a {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+
+  header > nav > .hamburger {
+    display: none;
+  }
+
+  #headline {
+    flex-direction: row !important;
+    align-items: center;
+    background-image: url('assets/Illustration-header-desktop.svg') !important;
+    background-position-y: top !important;
+    background-size: 40% !important;
+  }
+
+  #headline > .headline_right {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+
+  #headline > .headline_right > h1 {
+    font-size: 72px;
+    line-height: 82px;
+  }
+
+  #headline > .headline_right > p.title {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  #headline > .headline_right > p.title_description {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  #headline > .social {
+    order: -1;
+    margin-right: 85px;
+    row-gap: 16px;
+    width: fit-content;
+    flex-direction: column;
+  }
+
+  #portfolio {
+    padding: 135px 140px;
+  }
+
+  #portfolio > h2 {
+    float: left;
+    margin-right: 24px;
+    transform: translateY(-50%);
+  }
+
+  #portfolio > .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0;
+  }
+
+  #portfolio > .cards > .unusualCard {
+    display: block;
+    margin-bottom: 24px;
+  }
+
+  #portfolio > .cards > .card {
+    width: 31%;
+  }
+
+  #portfolio > .cards > .unusualCard > img {
+    float: left;
+    width: 59%;
+    margin-right: 24px;
+  }
+
+  #portfolio > .cards > .unusualCard > h2 {
+    text-align: left;
+    font-size: 40px;
+    line-height: 52px;
+    margin-bottom: 24px;
+  }
+
+  #portfolio > .cards > .unusualCard > p {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  #portfolio > .cards > .unusualCard > .skills {
+    width: 38%;
+  }
+
+  #portfolio > .cards > .card > .main > .skills > li {
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+  }
+
+  #portfolio > .cards > .card > .main > .skills > li:first-child {
+    display: none;
+  }
+
+  #portfolio > .cards > .unusualCard > button {
+    margin-top: 24px;
+  }
+
+  #portfolio > .cards > .card > button {
+    display: none;
+  }
+
+  #portfolio > .cards > .card.first > .main {
+    background-image: url('assets/cardsDesktop/card1.svg');
+    background-size: cover;
+  }
+
+  #portfolio > .cards > .card.first > .main > h2,
+  #portfolio > .cards > .card.first > .main > p,
+  #portfolio > .cards > .card.first > .main > .skills {
+    opacity: 0;
+  }
+
+  #portfolio > .cards > .card.first > .main {
+    transform: translateY(-50px);
+  }
+
+  #display {
+    display: block !important;
+    transform: translateY(-100%);
+  }
+
+  #portfolio > .cards > .card > .main > .skills {
+    margin-top: 24px;
+  }
+
+  #portfolio > .cards > .card:nth-child(3) > .main,
+  #portfolio > .cards > .card:nth-child(6) > .main {
+    background-image: url('assets/cardsDesktop/card2.svg') !important;
+  }
+
+  #portfolio > .cards > .card:nth-child(4) > .main,
+  #portfolio > .cards > .card:nth-child(7) > .main {
+    background-image: url('assets/cardsDesktop/card3.svg') !important;
+  }
+
+  #about {
+    padding: 130px 140px;
+    background-image: url('assets/illustration-about-desktop.svg');
+    background-position-y: 5%;
+  }
+
+  #about > p {
+    float: left;
+    width: 50%;
+  }
+
+  #about > .skillTypes {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #about > .skillTypes > li {
+    align-items: baseline !important;
+  }
+
+  #about > .skillTypes > li > ul {
+    align-items: baseline !important;
+  }
+
+  #contact {
+    padding: 130px 135px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #contact > h2 {
+    width: 40%;
+    text-align: left;
+    font-size: 40px;
+    line-height: 52px;
+    margin-right: 24px;
+  }
+
+  #contact > form {
+    width: 56%;
+  }
+
+  #contact > form > input[type='submit'] {
+    margin: 0;
+  }
 }
