@@ -557,6 +557,20 @@ footer > .social > li > a {
     margin-bottom: 24px;
   }
 
+  #portfolio > .cards > .unusualCard > .skills {
+    width: 38%;
+  }
+
+  #portfolio > .cards > .card > .main > .skills > li {
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+  }
+
+  #portfolio > .cards > .card > .main > .skills > li:first-child {
+    display: none;
+  }
+
   #portfolio > .cards > .unusualCard > button {
     margin-top: 24px;
   }
