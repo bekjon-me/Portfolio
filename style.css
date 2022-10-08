@@ -172,7 +172,7 @@ section#headline > .headline_right > p.title_description {
 
 #delay {
   font-size: 18px;
-  transition-property:font-size;
+  transition-property: font-size;
   transition-duration: 10s;
   transition-delay: 4s;
 }
@@ -458,7 +458,8 @@ footer {
 }
 
 footer > .social > li > a {
-  filter: invert(37%) sepia(8%) saturate(1480%) hue-rotate(180deg)
+  filter:
+    invert(37%) sepia(8%) saturate(1480%) hue-rotate(180deg)
     brightness(50%) contrast(90%);
   font-weight: bold;
 }
@@ -480,7 +481,7 @@ footer > .social > li > a {
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
-    color: #ffffff;
+    color: #fff;
   }
 
   header > nav > .hamburger {
@@ -523,6 +524,11 @@ footer > .social > li > a {
     row-gap: 16px;
     width: fit-content;
     flex-direction: column;
+  }
+
+  #about > p {
+    float: left;
+    width: 50%;
   }
 
   #portfolio {
@@ -603,72 +609,39 @@ footer > .social > li > a {
     opacity: 0;
   }
 
+  /* duplicate/*
   #portfolio > .cards > .card.first > .main {
     transform: translateY(-50px);
   }
+    /*duplicate */
 
   #display {
     display: block !important;
     transform: translateY(-100%);
   }
 
-  #portfolio > .cards > .card > .main > .skills {
-    margin-top: 24px;
-  }
+  /* dupl */
+}
 
-  #portfolio > .cards > .card:nth-child(3) > .main,
-  #portfolio > .cards > .card:nth-child(6) > .main {
-    background-image: url('assets/cardsDesktop/card2.svg') !important;
-  }
+/* dupl */
 
-  #portfolio > .cards > .card:nth-child(4) > .main,
-  #portfolio > .cards > .card:nth-child(7) > .main {
-    background-image: url('assets/cardsDesktop/card3.svg') !important;
-  }
+#portfolio > .cards > .card:nth-child(3) > .main,
+#portfolio > .cards > .card:nth-child(6) > .main {
+  background-image: url('assets/cardsDesktop/card2.svg') !important;
+}
 
-  #about {
-    padding: 130px 140px;
-    background-image: url('assets/illustration-about-desktop.svg');
-    background-position-y: 5%;
-  }
+#portfolio > .cards > .card:nth-child(4) > .main,
+#portfolio > .cards > .card:nth-child(7) > .main {
+  background-image: url('assets/cardsDesktop/card3.svg') !important;
+}
 
-  #about > p {
-    float: left;
-    width: 50%;
-  }
+#about > .skillTypes {
+  display: flex;
+  justify-content: space-between;
+}
 
-  #about > .skillTypes {
-    display: flex;
-    justify-content: space-between;
-  }
-
+/*
   #about > .skillTypes > li {
     align-items: baseline !important;
   }
-
-  #about > .skillTypes > li > ul {
-    align-items: baseline !important;
-  }
-
-  #contact {
-    padding: 130px 135px;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  #contact > h2 {
-    width: 40%;
-    text-align: left;
-    font-size: 40px;
-    line-height: 52px;
-    margin-right: 24px;
-  }
-
-  #contact > form {
-    width: 56%;
-  }
-
-  #contact > form > input[type='submit'] {
-    margin: 0;
-  }
-}
+  */
