@@ -170,6 +170,17 @@ section#headline > .headline_right > p.title_description {
   color: #f4f5f7;
 }
 
+#delay {
+  font-size: 18px;
+  transition-property:font-size;
+  transition-duration: 10s;
+  transition-delay: 4s;
+}
+
+#delay:hover {
+  font-size: 40px;
+}
+
 #portfolio > .cards > .unusualCard > p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -240,6 +251,8 @@ section#headline > .headline_right > p.title_description {
   color: #f55800;
   background-color: #fff5e1;
   border: 1px solid #f55800;
+  transition: 0.6 ease;
+  transform: scale(1.4);
 }
 
 #about > button:active {
